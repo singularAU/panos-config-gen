@@ -1,0 +1,14 @@
+*********************************************
+PALO ALTO NETWORKS - MANAGEMENT CONFIGURATION
+*********************************************
+
+set deviceconfig system timezone {{ timezone }}
+set deviceconfig system domain-name {{ domain }}
+set deviceconfig system service disable-telnet yes
+set deviceconfig system service disable-http yes
+set deviceconfig system hostname {{ hostname }}
+set deviceconfig system ip-address {{ mgmt_ip }}
+set deviceconfig system netmask {{ mgmt_netmask }}
+set deviceconfig system default-gateway {{ mgmt_gateway }}
+set deviceconfig system dns-server primary {{ dns_primary }}
+set deviceconfig system dns-server secondary {{ dns_secondary }}

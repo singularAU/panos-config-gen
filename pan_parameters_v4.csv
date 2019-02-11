@@ -1,0 +1,3 @@
+hostname;domain;dns_primary;dns_secondary;timezone;mgmt_ip;mgmt_netmask;mgmt_gateway
+auqnb2pfw01;corpad.net.local;1.1.1.1;8.8.8.8;EST;10.245.233.11;255.255.255.0;10.245.232.1
+auqnb2pfw02;corpad.net.local;1.1.1.1;8.8.8.8;EST;10.245.233.12;255.255.255.0;10.245.232.1

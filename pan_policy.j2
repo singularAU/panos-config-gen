@@ -1,0 +1,17 @@
+******************************************
+Policy
+******************************************
+
+{{ hostname }}
+
+set device-group {{ devicegroup }} pre-rulebase security rules "{{ policy_name }}" from {{ from_zone }}
+set device-group {{ devicegroup }} pre-rulebase security rules "{{ policy_name }}" to {{ to_zone }}
+set device-group {{ devicegroup }} pre-rulebase security rules "{{ policy_name }}" source [ {{ source_ip }} ]
+set device-group {{ devicegroup }} pre-rulebase security rules "{{ policy_name }}" destination [ {{ destination_ip }} ]
+set device-group {{ devicegroup }} pre-rulebase security rules "{{ policy_name }}" source-user any
+set device-group {{ devicegroup }} pre-rulebase security rules "{{ policy_name }}" category any
+set device-group {{ devicegroup }} pre-rulebase security rules "{{ policy_name }}" application [ {{ applications }} ]
+set device-group {{ devicegroup }} pre-rulebase security rules "{{ policy_name }}" service {{ services }}
+set device-group {{ devicegroup }} pre-rulebase security rules "{{ policy_name }}" hip-profiles any
+set device-group {{ devicegroup }} pre-rulebase security rules "{{ policy_name }}" action {{ action }}
+set device-group {{ devicegroup }} pre-rulebase security rules "{{ policy_name }}" log-start no
